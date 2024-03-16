@@ -1,0 +1,29 @@
+<div class="container">
+    <br>
+    <button class="btn btn-success" routerLink="/addCoach">+</button>
+    <br>
+    <h1>La page des coachs</h1>
+    <br>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Age</th>
+            <th scope="col">Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of coachs">
+            <th scope="row">{{c.id}}</th>
+            <td>{{c.name}}</td>
+            <td>{{c.age}}</td>
+            <td>
+                <div class="btn btn-primary m-lg-1">Modifier</div>
+                <div class="btn btn-danger" (click) ="deleteCoach(c.id)">Supprimer</div>
+            </td>
+          </tr>
+        
+        </tbody>
+      </table>
+</div>

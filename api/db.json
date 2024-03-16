@@ -1,0 +1,33 @@
+{
+  "coach": [
+    {
+      "id": "4",
+      "name": "Fallou Smith",
+      "age": 30
+    },
+    {
+      "id": "fe65",
+      "name": "moussa ndiaye",
+      "age": "10"
+    },
+    {
+      "id": "e73c",
+      "name": "amamdou ndiaye",
+      "age": "30"
+    },
+    {
+      "id": "8e6c",
+      "name": "Fatou diop",
+      "age": "10"
+    }
+  ],
+  "equipe": [
+    {
+      "id": "4",
+      "libelle": "Fallou Smith",
+      "nombreJoueur": 30,
+      "couleur":"blanc"
+    }
+  
+  ]
+}
