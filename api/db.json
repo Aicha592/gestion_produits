@@ -1,9 +1,9 @@
 {
   "coach": [
     {
-      "id": "4",
       "name": "Fallou Smith",
-      "age": 30
+      "age": 30,
+      "id": "4"
     },
     {
       "id": "fe65",
@@ -19,6 +19,16 @@
       "id": "8e6c",
       "name": "Fatou diop",
       "age": "10"
+    },
+    {
+      "name": "Nogaye DIOP",
+      "age": "50",
+      "id": "9a35"
+    },
+    {
+      "id": "e12d",
+      "name": "Awa fall",
+      "age": "80"
     }
   ],
   "equipe": [
@@ -26,8 +36,7 @@
       "id": "4",
       "libelle": "Fallou Smith",
       "nombreJoueur": 30,
-      "couleur":"blanc"
+      "couleur": "blanc"
     }
-  
   ]
 }

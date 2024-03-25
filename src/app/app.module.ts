@@ -11,6 +11,7 @@ import { EquipePipe } from './pipe/equipe.pipe';
 import { CoachPipe } from './pipe/coach.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StatistiqueComponent } from './statistique/statistique.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ListCoachComponent,
     AddCoachComponent,
     EquipePipe,
-    CoachPipe
+    CoachPipe,
+    StatistiqueComponent
   ],
   imports: [
     BrowserModule,

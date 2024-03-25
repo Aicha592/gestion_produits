@@ -13,6 +13,9 @@ export class CoachService {
   getAll():Observable<Coach[]>{
     return  this.http.get<Coach[]>(this.api+"/coach/");
   }
+  getById(id:any):Observable<Coach>{
+    return  this.http.get<Coach>(this.api+"/coach/"+id);
+  }
 
   deleteCoach(id :any){
     return this.http.delete(this.api+"/coach/"+id);
@@ -20,5 +23,8 @@ export class CoachService {
 
   addCoach(coach :Coach){
     return this.http.post(this.api+"/coach/", coach);
+  }
+  updatCoach(id:any,coach : Coach){
+    return this.http.put(this.api+"/coach/"+id,coach);
   }
 }

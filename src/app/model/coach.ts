@@ -1,6 +1,6 @@
 export class Coach {
-    id:string |undefined
-    name:string| undefined
-    age:number | undefined
+    id!:string 
+    name!:string
+    age!: number 
 
 }

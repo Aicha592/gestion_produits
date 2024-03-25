@@ -1,6 +1,6 @@
 <div class="container">
     <br>
-    <h1>La page d'ajout  (Coach)</h1>
+    <h1>La page {{this.id == null ? 'd\'ajout' : 'modifier'}}   (Coach)</h1>
     <br>
     <form action=""  #values="ngForm"  (ngSubmit)="save(values)">
         <label for="">Name</label>
@@ -8,7 +8,7 @@
         <label for="">Age</label>
         <input type="text" class="form-control" [(ngModel)]="age" name="age">
         <br>
-        <button type="submit" class="btn btn-success m-lg-1" >Ajouter</button>
+        <button type="submit" class="btn btn-success m-lg-1" >{{this.id == null ? 'Ajouter' : 'Modifier'}}</button>
         <button type="reset" routerLink="/coach" class="btn btn-danger">Retour</button>
     </form>
 </div>
