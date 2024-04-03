@@ -1,42 +1,94 @@
 {
-  "coach": [
+  "user": [
     {
-      "name": "Fallou Smith",
-      "age": 30,
-      "id": "4"
+      "id": "1",
+      "nom": "Faye",
+      "prenom": "Bassirou Diomaye Diakhar",
+      "age": 44
     },
     {
-      "id": "fe65",
-      "name": "moussa ndiaye",
-      "age": "10"
+      "nom": "Cisse",
+      "prenom": "Aicha",
+      "age": 20,
+      "id": "e06a"
     },
     {
-      "id": "e73c",
-      "name": "amamdou ndiaye",
-      "age": "30"
+      "id": "4410",
+      "nom": "Tine",
+      "prenom": "Ibrahima",
+      "age": 3
     },
     {
-      "id": "8e6c",
-      "name": "Fatou diop",
-      "age": "10"
-    },
-    {
-      "name": "Nogaye DIOP",
-      "age": "50",
-      "id": "9a35"
-    },
-    {
-      "id": "e12d",
-      "name": "Awa fall",
-      "age": "80"
+      "id": "d0e8",
+      "nom": "Cisse",
+      "prenom": "Sokhna",
+      "age": 23
     }
   ],
-  "equipe": [
+  "categorie": [
     {
-      "id": "4",
-      "libelle": "Fallou Smith",
-      "nombreJoueur": 30,
-      "couleur": "blanc"
+      "id": "1",
+      "libelle": "alimentaire"
+    },
+    {
+      "id": "e549",
+      "libelle": "Accessoires"
+    },
+    {
+      "id": "02f1",
+      "libelle": "electronique"
+    },
+    {
+      "id": "13f7",
+      "libelle": "sportif"
+    }
+  ],
+  "marque": [
+    {
+      "id": "1",
+      "libelle": "apple"
+    },
+    {
+      "id": "2e48",
+      "libelle": "nestle"
+    },
+    {
+      "id": "af6a",
+      "libelle": "Louis Vuitton"
+    },
+    {
+      "id": "ea42",
+      "libelle": "nike"
+    }
+  ],
+  "produit": [
+    {
+      "id": "8885",
+      "libelle": "Lait",
+      "quantite": 25,
+      "categorieId": "alimentaire",
+      "marqueId": "nestle"
+    },
+    {
+      "id": "6cb4",
+      "libelle": "Sac",
+      "quantite": 1,
+      "categorieId": "Accessoires",
+      "marqueId": "Louis Vuitton"
+    },
+    {
+      "id": "dcd0",
+      "libelle": "chaussure",
+      "quantite": 3,
+      "categorieId": "Accessoires",
+      "marqueId": "Louis Vuitton"
+    },
+    {
+      "id": "5fea",
+      "libelle": "Sucre",
+      "quantite": 53,
+      "categorieId": "1",
+      "marqueId": "2e48"
     }
   ]
 }

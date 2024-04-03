@@ -1,0 +1,35 @@
+<br>
+<br>
+<div class="container" style="background-color: aliceblue;"> 
+  
+  <br>
+  <br>
+  <button type="button" class="btn btn-outline-dark" routerLink="/addProduit" > Ajouter</button>
+  <br>
+  <br>
+  <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Libelle</th>
+          <th scope="col">Quantité</th>
+          <th scope="col">Catégorie</th>
+          <th scope="col">Marque</th>
+          <th scope="col">Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let produit of produits">
+          <th scope="row">{{ produit.id }}</th>
+          <td>{{ produit.libelle }}</td>
+          <td>{{ produit.quantite }}</td>
+          <td>{{ produit.categorieId }}</td>
+          <td>{{ produit.marqueId }}</td>
+          <td>
+            <div class="btn btn-outline-primary" routerLink="/updateProduit/{{ produit.id }}">Modifier</div>&nbsp;
+            <div class="btn btn-outline-danger" (click)="deleteProduit(produit.id)">Supprimer</div>
+          </td>
+        </tr>
+      </tbody>
+  </table>
+</div>

@@ -1,27 +1,37 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListEquipeComponent } from './list-equipe/list-equipe.component';
-import { AddEquipeComponent } from './add-equipe/add-equipe.component';
-import { ListCoachComponent } from './list-coach/list-coach.component';
-import { AddCoachComponent } from './add-coach/add-coach.component';
-import { EquipePipe } from './pipe/equipe.pipe';
-import { CoachPipe } from './pipe/coach.pipe';
+import { ListUserComponent } from './list-user/list-user.component';
+import { AddUserComponent } from './add-user/add-user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddCategorieComponent } from './add-categorie/add-categorie.component';
+import { AddMarqueComponent } from './add-marque/add-marque.component';
+import { AddProduitComponent } from './add-produit/add-produit.component';
+import { CategoriesPipe } from './pipe/categories.pipe';
+import { MarquesPipe } from './pipe/marques.pipe';
+import { ProduitsPipe } from './pipe/produits.pipe';
+import { ListProduitComponent } from './list-produit/list-produit.component';
+import { ListCategorieComponent } from './list-categorie/list-categorie.component';
+import { ListMarqueComponent } from './list-marque/list-marque.component';
 import { StatistiqueComponent } from './statistique/statistique.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListEquipeComponent,
-    AddEquipeComponent,
-    ListCoachComponent,
-    AddCoachComponent,
-    EquipePipe,
-    CoachPipe,
+    ListUserComponent,
+    AddUserComponent,
+    AddCategorieComponent,
+    AddMarqueComponent,
+    AddProduitComponent,
+    CategoriesPipe,
+    MarquesPipe,
+    ProduitsPipe,
+    ListProduitComponent,
+    ListCategorieComponent,
+    ListMarqueComponent,
     StatistiqueComponent
   ],
   imports: [
@@ -29,7 +39,8 @@ import { StatistiqueComponent } from './statistique/statistique.component';
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

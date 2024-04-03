@@ -1,0 +1,33 @@
+<br>
+<br>
+<div class="container" style="background-color: aliceblue;">
+    <br>
+    <br>
+    <br>
+    <button type="button" class="btn btn-outline-dark" routerLink="/addMarque">Ajouter</button>
+    <br>
+    <br>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Libelle</th>
+            <th scope="col">Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <tr *ngFor="let m of marque">
+                <th scope="row">{{m.id}}</th>
+                <td>{{m.libelle}}</td>
+            <td>
+                <div class="btn btn-outline-primary"  routerLink="/updateMarque/{{m.id}}">Modifier</div>&nbsp;
+                <div class="btn btn-outline-danger" (click) ="deleteMarque(m.id)">Supprimer</div>
+            </td>
+          </tr>
+         
+         
+        </tbody>
+      </table>
+    
+    </div>

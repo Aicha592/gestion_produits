@@ -1,0 +1,6 @@
+a:active,
+a:hover,
+a:focus {
+  color: darkblue;
+  text-decoration: none; /* Supprimer le soulignement par défaut */
+}

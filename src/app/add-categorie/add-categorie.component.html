@@ -1,0 +1,24 @@
+<br>
+<br>
+<div class="container" >
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+    <br>
+    <br>
+    <form action="" #values="ngForm" (ngSubmit)="save(values)" style="background-color: aliceblue;">
+        <h1>{{this.id == null ? '\Ajout': 'Modifier'}} Catégories</h1>
+        <br>
+        <fieldset >
+          <div class="form-group">
+            <label for="disabledTextInput">Libelle</label>
+            <input type="text" id="libelle" class="form-control" [(ngModel)]="libelle" name="libelle"  placeholder="Libelle">
+          </div>
+          
+          <br>
+        </fieldset>
+        <button type="submit" class="btn btn-primary" >{{this.id == null ? 'Ajouter' : 'Modifier'}}</button>&nbsp;
+          <button type="reset" class="btn btn-danger" routerLink="/categorie">Annuler</button>
+      </form>
+    </div>
